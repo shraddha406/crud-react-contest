@@ -1,0 +1,129 @@
+.crud-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.crud-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.crud-button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  background-color: #1A4870;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.crud-button:hover {
+  background-color: #1A4870;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  background-color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure space between title and actions */
+  gap: 10px; /* Space between title and actions */
+}
+
+.item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase; /* Ensure title is uppercase */
+  flex-grow: 1; /* Allow title to take up available space */
+  overflow-wrap: break-word; /* Allow long words to break and wrap */
+  word-wrap: break-word; /* Ensure long words wrap */
+  word-break: break-word; /* Break long words if needed */
+}
+
+.item-link {
+  color: #1A4870;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.item-link:hover {
+  color: #1A4870;
+}
+
+.delete-edit {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.delete-edit button,
+.delete-edit a {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.delete-edit .crud-button {
+  background-color: #1A4870; /* Same color as other buttons */
+  color: white;
+}
+
+.delete-edit .crud-button:hover {
+  background-color: #1A4870; /* Maintain hover color */
+}
+
+.delete-edit .crud-button:active {
+  transform: scale(0.98); /* Slightly shrink button when pressed */
+}
+
+.delete-edit .item-edit {
+  background-color: #4CAF50; /* Green color for edit */
+  color: white;
+}
+
+.delete-edit .item-edit:hover {
+  background-color: #45a049;
+}
+
+.delete-edit .item-edit:active {
+  transform: scale(0.98);
+}
+
+.delete-edit .item-delete {
+  background-color: #f44336; /* Red color for delete */
+  color: white;
+}
+
+.delete-edit .item-delete:hover {
+  background-color: #e53935;
+}
+
+.delete-edit .item-delete:active {
+  transform: scale(0.98);
+}
